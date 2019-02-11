@@ -4,7 +4,7 @@
 //
 //  Created by Samuel Schuffler on 2/8/19.
 //  Copyright © 2019 John Hersey High School. All rights reserved.
-//
+//  Sam Rocks
 
 import UIKit
 
