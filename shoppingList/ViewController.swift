@@ -23,11 +23,16 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
+            cell.textLabel?.text = "Kyle is the greatest Water Polo player ever"
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
     
 }
