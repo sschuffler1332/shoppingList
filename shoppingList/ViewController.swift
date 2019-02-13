@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        let itemOne = Item(name: "Milk")
+        let itemOne = (name: "Milk", quantity: 2)
         let itemTwo = Item(name: "Blueberries")
         items = [itemOne, itemTwo]
         let itemThree = Item(name: "Crackers")
@@ -45,6 +45,9 @@ class ViewController: UIViewController, UITableViewDataSource {
             let itemname = items[indexPath.row].name
             cell.textLabel?.text = itemname
             
+            if indexPath.row % 2 == 0 {
+                cell.backgroundColor = UIColor.purple
+            }
             
             return cell
         } else {
