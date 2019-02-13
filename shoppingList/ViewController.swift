@@ -24,10 +24,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         items = [itemOne, itemTwo]
         let itemThree = Item(name: "Crackers")
         items.append(itemThree)
+        let itemFour = Item(name: "Ryan Kaiser")
+        items.append(itemFour)
     }
 
     @IBAction func newItemButtonPressed(_ sender: Any) {
-    
+        if let newItemName = newItemTextField.text, newItemName != ""{
+            let newItem = Item(name: newItemName)
+            items.append(newItem)
+            tableView.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +44,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
             let itemname = items[indexPath.row].name
             cell.textLabel?.text = itemname
+            
+            
             return cell
         } else {
             return UITableViewCell()
