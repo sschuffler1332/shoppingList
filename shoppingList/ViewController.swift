@@ -13,9 +13,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var newItemTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
+    var items:[Item] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        
+        let itemOne = Item(name: "Milk")
+        let itemTwo = Item(name: "Blueberries")
+        items = [itemOne, itemTwo]
+        let itemThree = Item(name: "Crackers")
+        items.append(itemThree)
     }
 
     @IBAction func newItemButtonPressed(_ sender: Any) {
@@ -23,12 +31,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
-            cell.textLabel?.text = "Kyle is the greatest Water Polo player ever"
+            let itemname = items[indexPath.row].name
+            cell.textLabel?.text = itemname
             return cell
         } else {
             return UITableViewCell()
