@@ -104,6 +104,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="V2n-8k-lNU"/>
                     </view>
+                    <connections>
+                        <outlet property="quantityLabel" destination="U4X-zW-b2t" id="jf2-ox-dYK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRE-U2-U04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

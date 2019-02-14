@@ -10,10 +10,15 @@ import UIKit
 
 class SecondViewViewController: UIViewController {
 
+    @IBOutlet weak var quantityLabel: UILabel!
+    
+    var passedItem: Item!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = passedItem.name
+        quantityLabel.text = "Quantiy:\(passedItem.quantity)"
     }
     
 
