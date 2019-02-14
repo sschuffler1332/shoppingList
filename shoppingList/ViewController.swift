@@ -19,13 +19,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         tableView.dataSource = self
         
-        let itemOne = (name: "Milk", quantity: 2)
+        let itemOne = Item(name: "Milk", quantity: 2)
         let itemTwo = Item(name: "Blueberries")
         items = [itemOne, itemTwo]
         let itemThree = Item(name: "Crackers")
         items.append(itemThree)
         let itemFour = Item(name: "Ryan Kaiser")
         items.append(itemFour)
+        
     }
 
     @IBAction func newItemButtonPressed(_ sender: Any) {
@@ -43,10 +44,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") {
             let itemname = items[indexPath.row].name
+            let quantityName = items[indexPath.row].quantity
+            cell.detailTextLabel?.text = "quantity:\(quantityName)"
             cell.textLabel?.text = itemname
             
             if indexPath.row % 2 == 0 {
                 cell.backgroundColor = UIColor.purple
+            } else {
+                cell.backgroundColor = UIColor.blue
             }
             
             return cell

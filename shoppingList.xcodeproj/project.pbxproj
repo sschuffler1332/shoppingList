@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A424FCCE22136D4C007A0359 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424FCCD22136D4C007A0359 /* Item.swift */; };
+		A432676C22160C79009E7819 /* SecondViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A432676B22160C79009E7819 /* SecondViewViewController.swift */; };
 		A4999B13220E246C00E18EB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4999B12220E246C00E18EB2 /* AppDelegate.swift */; };
 		A4999B15220E246C00E18EB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4999B14220E246C00E18EB2 /* ViewController.swift */; };
 		A4999B18220E246C00E18EB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4999B16220E246C00E18EB2 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		A424FCCD22136D4C007A0359 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A432676B22160C79009E7819 /* SecondViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewViewController.swift; sourceTree = "<group>"; };
 		A4999B0F220E246C00E18EB2 /* shoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4999B12220E246C00E18EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4999B14220E246C00E18EB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A4999B12220E246C00E18EB2 /* AppDelegate.swift */,
 				A4999B14220E246C00E18EB2 /* ViewController.swift */,
 				A4999B16220E246C00E18EB2 /* Main.storyboard */,
+				A432676B22160C79009E7819 /* SecondViewViewController.swift */,
 				A424FCCD22136D4C007A0359 /* Item.swift */,
 				A4999B19220E246F00E18EB2 /* Assets.xcassets */,
 				A4999B1B220E246F00E18EB2 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				A4999B15220E246C00E18EB2 /* ViewController.swift in Sources */,
 				A424FCCE22136D4C007A0359 /* Item.swift in Sources */,
 				A4999B13220E246C00E18EB2 /* AppDelegate.swift in Sources */,
+				A432676C22160C79009E7819 /* SecondViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
